@@ -202,11 +202,29 @@ python -m http.server 8000
 - Enable automatic deployments from main branch
 - Configure custom domain if desired
 
+## 🚀 **Future: API Access for Developers**
+
+### **Coming Soon - Q2 2024**
+Typing Pro will provide a powerful REST API that allows developers to integrate typing functionality into their applications, websites, and services.
+
+**Key Features:**
+- **Typing Test Generation**: Generate custom typing tests via API
+- **Practice Content**: Access to our extensive practice content library
+- **Analytics**: Get detailed typing performance insights
+- **Multi-language Support**: Typing content in various languages
+- **Custom Content**: Upload and manage your own practice content
+
+**Use Cases:**
+- Educational platforms and learning management systems
+- Business applications and employee training
+- Gaming and entertainment applications
+- Accessibility tools and assistive technology
+
+**Documentation:** [Complete API Reference](docs/API-ACCESS.md)
+
+---
+
 ## 📚 API Reference
-
-### Core Methods
-
-#### `TypingTest` Class
 ```javascript
 class TypingTest {
     constructor()                    // Initialize the application
@@ -324,10 +342,12 @@ SOFTWARE.
 - [ ] Offline PWA support
 - [ ] Advanced accessibility features
 - [ ] Enterprise features for teams
-- [ ] API for third-party integrations
+- [ ] **API for third-party integrations** - [Documentation](docs/API-ACCESS.md)
 
 ---
 
 **Made with ❤️ by the Typing Pro Community**
 
 *Improve your typing skills, one keystroke at a time!*
+
+

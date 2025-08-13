@@ -19,11 +19,14 @@ class TypingTest {
         this.practiceParagraphs = [];
         this.currentPracticeMode = 'normal';
         
+
+        
         this.initializeElements();
         this.bindEvents();
         this.generateWords();
         this.updateDisplay();
         this.updateKeyStats();
+        this.initializeSoundPreference();
     }
 
     initializeElements() {
@@ -41,6 +44,7 @@ class TypingTest {
         this.keyStatsPanel = document.getElementById('keyStatsPanel');
         this.keyStatsGrid = document.getElementById('keyStatsGrid');
         this.generatePracticeBtn = document.getElementById('generatePracticeBtn');
+        this.soundToggle = document.getElementById('soundToggle');
         
         // Stats elements
         this.timeElement = document.getElementById('time');
@@ -67,6 +71,7 @@ class TypingTest {
         this.paragraphLength.addEventListener('change', () => this.generateWords());
         this.keyTracking.addEventListener('change', () => this.updateKeyTracking());
         this.generatePracticeBtn.addEventListener('click', () => this.generatePracticeParagraph());
+        this.soundToggle.addEventListener('click', () => this.toggleSound());
         
         // Enhanced dropdown interactions
         this.enhanceDropdowns();
@@ -739,7 +744,40 @@ class TypingTest {
         this.timeLeft = parseInt(this.timeSelect.value);
         this.updateDisplay();
     }
+
+    toggleSound() {
+        const soundIcon = this.soundToggle.querySelector('.sound-icon');
+        const isActive = this.soundToggle.classList.contains('active');
+        
+        if (isActive) {
+            this.soundToggle.classList.remove('active');
+            soundIcon.textContent = '🔇';
+            soundIcon.title = 'Sound Disabled';
+        } else {
+            this.soundToggle.classList.add('active');
+            soundIcon.textContent = '🔊';
+            soundIcon.title = 'Sound Enabled';
+        }
+        
+        // Store preference in localStorage
+        localStorage.setItem('typingProSoundEnabled', !isActive);
+    }
+
+    initializeSoundPreference() {
+        const isSoundEnabled = localStorage.getItem('typingProSoundEnabled') === 'true';
+        if (isSoundEnabled) {
+            this.soundToggle.classList.add('active');
+            this.soundToggle.querySelector('.sound-icon').textContent = '🔊';
+            this.soundToggle.querySelector('.sound-icon').title = 'Sound Enabled';
+        } else {
+            this.soundToggle.classList.remove('active');
+            this.soundToggle.querySelector('.sound-icon').textContent = '🔇';
+            this.soundToggle.querySelector('.sound-icon').title = 'Sound Disabled';
+        }
+    }
 }
+
+
 
 // Initialize the typing test when the page loads
 document.addEventListener('DOMContentLoaded', () => {
