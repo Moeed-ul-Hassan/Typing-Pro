@@ -1,0 +1,95 @@
+{
+  "name": "typing-pro",
+  "version": "2.0.0",
+  "description": "A modern, feature-rich typing speed tester and practice application built with vanilla JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build process required for vanilla JS'",
+    "test": "echo 'Run tests manually in browser'",
+    "lint": "echo 'No linter configured for vanilla JS'",
+    "format": "echo 'Format code manually'"
+  },
+  "keywords": [
+    "typing",
+    "speed-test",
+    "practice",
+    "keyboard",
+    "wpm",
+    "accuracy",
+    "vanilla-javascript",
+    "html5",
+    "css3",
+    "web-app",
+    "progressive-web-app",
+    "accessibility",
+    "responsive-design"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your-email@example.com",
+    "url": "https://github.com/yourusername"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/typing-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/typing-pro/issues"
+  },
+  "homepage": "https://github.com/yourusername/typing-pro#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "Chrome >= 80",
+    "Firefox >= 75",
+    "Safari >= 13",
+    "Edge >= 80"
+  ],
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {},
+  "bundledDependencies": [],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/yourusername"
+  },
+  "man": "./README.md",
+  "directories": {
+    "lib": ".",
+    "test": "tests",
+    "doc": "docs",
+    "example": "examples"
+  },
+  "files": [
+    "index.html",
+    "script.js",
+    "styles.css",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "docs/**/*"
+  ]
+}
