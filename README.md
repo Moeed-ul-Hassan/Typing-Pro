@@ -1,10 +1,31 @@
-# Typing Pro 🚀
+# Typing Pro - Free Online Typing Speed Test & Practice
 
-A modern, feature-rich typing speed tester and practice application built with vanilla JavaScript, HTML, and CSS. Perfect for improving your typing skills with intelligent practice modes and detailed analytics.
+[![Typing Pro](https://img.shields.io/badge/Typing%20Pro-v2.0.0-blue.svg)](https://moeed-ul-hassan.github.io/Typing-Pro)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://moeed-ul-hassan.github.io/Typing-Pro)
 
-![Typing Pro Screenshot](https://img.shields.io/badge/Status-Active-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Version](https://img.shields.io/badge/Version-2.0.0-orange)
+**Test your typing speed with Typing Pro** - the most accurate online typing speed tester. Measure WPM (words per minute), accuracy, and improve your keyboard skills with free practice tests. Perfect for students, professionals, and typing enthusiasts.
+
+## 🚀 Features
+
+- **Real-time Typing Speed Test** - Instant WPM calculation and accuracy measurement
+- **Multiple Difficulty Levels** - Easy, Medium, Hard, and Expert modes
+- **Flexible Test Durations** - 15 seconds to 10 minutes
+- **Practice Modes** - Normal, Focused Practice, and Paragraph Mode
+- **Advanced Statistics** - Character count, error tracking, and key analysis
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- **Dark/Light Theme** - Customizable interface with theme toggle
+- **Sound Effects** - Audio feedback for better user experience
+- **PWA Ready** - Install as a desktop/mobile app
+
+## 🎯 Why Choose Typing Pro?
+
+- **100% Free** - No hidden costs or premium features
+- **No Registration Required** - Start testing immediately
+- **Accurate Measurements** - Professional-grade WPM and accuracy calculation
+- **Privacy Focused** - No data collection or tracking
+- **Open Source** - Transparent code, community-driven development
+- **Cross-Platform** - Works on all modern browsers and devices
 
 ## ✨ Features
 

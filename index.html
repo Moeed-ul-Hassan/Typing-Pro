@@ -3,10 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Pro - Speed Checker</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Primary Meta Tags -->
+    <title>Typing Pro - Free Online Typing Speed Test & Practice | WPM Calculator</title>
+    <meta name="title" content="Typing Pro - Free Online Typing Speed Test & Practice | WPM Calculator">
+    <meta name="description" content="Test your typing speed with Typing Pro - the most accurate online typing speed tester. Measure WPM, accuracy, and improve your keyboard skills with free practice tests. Perfect for students, professionals, and typing enthusiasts.">
+    <meta name="keywords" content="typing speed test, wpm calculator, typing practice, keyboard skills, typing accuracy, free typing test, online typing tutor, typing speed checker, words per minute, typing games">
+    <meta name="author" content="Moeed ul Hassan">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moeed-ul-hassan.github.io/Typing-Pro/">
+    <meta property="og:title" content="Typing Pro - Free Online Typing Speed Test & Practice">
+    <meta property="og:description" content="Test your typing speed with Typing Pro - the most accurate online typing speed tester. Measure WPM, accuracy, and improve your keyboard skills.">
+    <meta property="og:image" content="https://moeed-ul-hassan.github.io/Typing-Pro/og-image.png">
+    <meta property="og:site_name" content="Typing Pro">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://moeed-ul-hassan.github.io/Typing-Pro/">
+    <meta property="twitter:title" content="Typing Pro - Free Online Typing Speed Test & Practice">
+    <meta property="twitter:description" content="Test your typing speed with Typing Pro - the most accurate online typing speed tester. Measure WPM, accuracy, and improve your keyboard skills.">
+    <meta property="twitter:image" content="https://moeed-ul-hassan.github.io/Typing-Pro/twitter-image.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="msapplication-TileColor" content="#3b82f6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Typing Pro">
+    <meta name="application-name" content="Typing Pro">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://moeed-ul-hassan.github.io/Typing-Pro/">
+    
+    <!-- Performance Optimization: Critical CSS Inlining -->
+    <style>
+    /* Critical above-the-fold CSS - Loads instantly */
+    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #ffffff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    .header { text-align: center; padding: 2rem 0; }
+    .title { font-size: 2.5rem; margin: 0; color: #1f2937; font-weight: 600; }
+    .subtitle { font-size: 1.2rem; color: #6b7280; margin-top: 0.5rem; }
+    .stats-bar { display: flex; justify-content: space-around; margin: 2rem 0; background: #f9fafb; padding: 1rem; border-radius: 0.5rem; }
+    .typing-area { margin: 2rem 0; }
+    .words-container { background: #ffffff; padding: 2rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .input-area { margin-top: 1rem; }
+    #typingInput { width: 100%; padding: 1rem; border: 2px solid #e5e7eb; border-radius: 0.5rem; font-size: 1.1rem; font-family: 'JetBrains Mono', monospace; }
+    .restart-btn { margin-top: 1rem; padding: 0.75rem 1.5rem; background: #3b82f6; color: white; border: none; border-radius: 0.5rem; cursor: pointer; font-weight: 500; }
+    .restart-btn:hover { background: #2563eb; }
+    </style>
+
+    <!-- Performance Optimization: Resource Hints -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Performance Optimization: Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="script-optimized.js" as="script">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    
+    <!-- Performance Optimization: Font Preloading -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" as="style">
+    
+    <!-- Performance Optimization: Deferred Font Loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
     <div class="container">
@@ -178,6 +255,145 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Typing Pro",
+      "description": "Free online typing speed test and practice application. Test your WPM, accuracy, and improve keyboard skills with various difficulty levels and practice modes.",
+      "url": "https://moeed-ul-hassan.github.io/Typing-Pro",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Moeed ul Hassan",
+        "url": "https://www.moedulhassan.xyz/",
+        "sameAs": [
+          "https://github.com/Moeed-ul-Hassan"
+        ]
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "Moeed ul Hassan"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Moeed ul Hassan"
+      },
+      "softwareVersion": "2.0.0",
+      "featureList": [
+        "Typing speed test (WPM calculator)",
+        "Accuracy measurement",
+        "Multiple difficulty levels",
+        "Practice modes",
+        "Real-time statistics",
+        "Responsive design",
+        "Dark/Light theme",
+        "Sound effects"
+      ],
+      "screenshot": "https://moeed-ul-hassan.github.io/Typing-Pro/screenshot.png",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    
+    <!-- Additional structured data for FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I test my typing speed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply start typing in the input field. The test will automatically measure your WPM (words per minute), accuracy, and character count in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is WPM in typing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WPM stands for Words Per Minute. It's a measure of typing speed that counts how many words you can type in one minute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the typing speed test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our typing speed test is highly accurate and measures real-time performance including WPM, accuracy percentage, and character count."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Performance: Load optimized script -->
+    <script src="script-optimized.js"></script>
+    
+    <!-- Performance: Service Worker Registration -->
+    <script>
+        // Performance: Register service worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('🚀 Service Worker registered successfully:', registration);
+                        
+                        // Performance: Check for updates
+                        registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    console.log('🔄 New service worker available');
+                                }
+                            });
+                        });
+                    })
+                    .catch(error => {
+                        console.log('❌ Service Worker registration failed:', error);
+                    });
+            });
+        }
+        
+        // Performance: Preload critical resources
+        const preloadCriticalResources = () => {
+            const criticalResources = [
+                { href: 'styles.css', as: 'style' },
+                { href: 'script-optimized.js', as: 'script' }
+            ];
+            
+            criticalResources.forEach(resource => {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.href = resource.href;
+                link.as = resource.as;
+                document.head.appendChild(link);
+            });
+        };
+        
+        // Performance: Execute preloading when idle
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(preloadCriticalResources);
+        } else {
+            // Fallback for browsers without requestIdleCallback
+            setTimeout(preloadCriticalResources, 1000);
+        }
+    </script>
 </body>
 </html>

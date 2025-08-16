@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://moeed-ul-hassan.github.io/Typing-Pro/sitemap.xml
+
+# Crawl delay to be respectful to the server
+Crawl-delay: 1
+
+# Allow all important directories
+Allow: /docs/
+Allow: /assets/
+
+# Disallow any temporary or private files
+Disallow: /temp/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
